@@ -69,7 +69,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 	<?php if (is_mobile()):?>
 		<img id="elem" width="60" style="z-index: 999;position: absolute; top: 7vh;right: 1vw;" src="<?php echo esc_url( get_template_directory_uri() )?>/shimemaelogo.jpg"></img>
 	<?php else:?>
-		<img id="elem"  width="150" style="z-index: 999;position: absolute; top: 2vh;right: 2vw;" src="<?php echo esc_url( get_template_directory_uri() )?>/shimemaelogo.jpg"></img>
+		<img id="elem"  width="100" style="z-index: 999;position: absolute; top: 2vh;right: 2vw;" src="<?php echo esc_url( get_template_directory_uri() )?>/shimemaelogo.jpg"></img>
 	<?php endif;?>
 	
 	<script src="<?php echo esc_url( get_template_directory_uri() )?>/anime.min.js"></script>
@@ -104,7 +104,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 			window.onload = function() {
 			anime({
 				targets: elem,
-				translateX: '-65vw',
+				translateX: '-60vw',
 				rotate: '-1turn',
 				easing: 'easeInOutQuad'
 			})
