@@ -47,7 +47,11 @@ get_header(); ?>
 				
 				<picture>
   			<source media="(min-width: 600px)" srcset="https://shimemae.com/wp-content/uploads/2021/01/toppc.png">
-  			<img src="https://shimemae.com/wp-content/uploads/2021/01/top.png">
+	<?php if (is_mobile()):?>
+	  	<img src="https://shimemae.com/wp-content/uploads/2021/01/top.png">
+	<?php else:?>
+		<img width=40% src="https://shimemae.com/wp-content/uploads/2021/01/top.png">
+	<?php endif;?>
 		</picture>
 				
 				
